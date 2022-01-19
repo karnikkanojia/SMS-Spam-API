@@ -1,0 +1,13 @@
+name: spam
+channels:
+  - defaults
+  - conda-forge
+  - anaconda
+dependencies:
+  - python=3.7
+  - flask
+  - requests
+  - tensorflow
+  - numpy=1.19.5
+  - gunicorn
+  - python-dotenv
