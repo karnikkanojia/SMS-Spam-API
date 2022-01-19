@@ -4,6 +4,7 @@ import os
 from utils.score import get_scores
 
 app = Flask(__name__)
+config = load_dotenv()
 
 @app.errorhandler(404)
 def invalid(error):
@@ -17,4 +18,4 @@ def score():
         'score': score
     }
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=os.environ.FLASK_DEBUG, port=os.environ.PORT)
