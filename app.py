@@ -1,10 +1,14 @@
-from flask import Flask, request
+from flask import Flask, render_template, request
 from dotenv import load_dotenv
 import os
 from utils.score import get_scores
 
 app = Flask(__name__)
 config = load_dotenv()
+
+@app.errorhandler(404)
+def invalid(error):
+    return render_template('404.html')
 
 @app.route('/api', methods=['POST'])
 def score():
