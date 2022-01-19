@@ -1,10 +1,5 @@
 flask
 requests
 numpy==1.19.5
-jupyter
-pandas
-scikit-learn
-seaborn
 tensorflow==2.4.1
-wordcloud
 gunicorn
