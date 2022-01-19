@@ -4,7 +4,6 @@ import os
 from utils.score import get_scores
 
 app = Flask(__name__)
-config = load_dotenv()
 
 @app.errorhandler(404)
 def invalid(error):
