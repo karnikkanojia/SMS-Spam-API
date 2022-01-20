@@ -11,7 +11,7 @@ config = load_dotenv()
 def invalid(error):
     return render_template('404.html')
 
-@app.route('/api', methods=['POST'])
+@app.route('/api')
 def score():
     message = request.form.get('message')
     score = get_scores(message)
