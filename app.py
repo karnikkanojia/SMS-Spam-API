@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 from dotenv import load_dotenv
 import os
 from utils.score import get_scores
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 app = Flask(__name__)
 config = load_dotenv()
