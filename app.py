@@ -24,7 +24,7 @@ def invalid_usage(error):
 def score():
     message = request.form.get('message')
     if message is None or message == '':
-        raise InvalidAPIUsage("No user id provided!")
+        raise InvalidAPIUsage("No message provided!")
     score = get_scores(message)
     return {
         'score': score
