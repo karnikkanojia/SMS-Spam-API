@@ -20,7 +20,7 @@ def method_not_allowed(error):
 def invalid_usage(error):
     return jsonify(error.to_dict()), 400
 
-@app.route('/api')
+@app.route('/api', methods=['POST'])
 def score():
     message = request.form.get('message')
     if message is None or message == '':
