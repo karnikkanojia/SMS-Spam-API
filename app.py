@@ -18,16 +18,18 @@ def method_not_allowed(error):
 
 @app.errorhandler(InvalidAPIUsage)
 def invalid_usage(error):
-    return jsonify(error.to_dict()), 400
+    return jsonify(error.to_dict()), 200
 
 @app.route('/api', methods=['POST'])
 def score():
-    message = request.form.get('message')
+    data = request.get_json()
+    message = data['message']
     if message is None or message == '':
         raise InvalidAPIUsage("No message provided!")
     score = get_scores(message)
     return {
         'score': score
     }
+
 if __name__ == "__main__":
     app.run(port=os.environ.PORT)
