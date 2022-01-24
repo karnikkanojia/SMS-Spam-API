@@ -23,11 +23,15 @@ Use your creativity to design and develop a mobile app which can automatically s
 ## ❓ Problem Statement
 To design and develop a mobile app that can automatically scan through SMS texts to detect possible fraud and phishing attacks and suggest the user not to click on such a link.
 
-## 👌 What it does/ Features
-
+## 👌 What it does/ Features:
+- Spam and Malicious SMS Detection using BiLSTM Deep Learning Model with 98% Efficiency
+- "Report This" option which submits the incident to Cyber Security Department (CERT-In) for further investigation
+- User can see the SIM on which the spam message is coming
+- Easy to understand Minimilastic and Interactive UI/UX Design 
 
 ## Proposed Approach:
 <img src="https://github.com/eshaanagarwal/SMS-Spam-API/blob/documentation/hackathon.png" >
+
 
 
 ## Mockups
