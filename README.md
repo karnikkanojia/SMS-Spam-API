@@ -27,7 +27,7 @@ To design and develop a mobile app that can automatically scan through SMS texts
 
 
 ## Proposed Approach:
-<img src="https://github.com/antoneev/treehacks-2021/blob/main/mockups/flowdiag.png" >
+<img src="https://github.com/eshaanagarwal/SMS-Spam-API/blob/documentation/hackathon.png" >
 
 
 ## Mockups
