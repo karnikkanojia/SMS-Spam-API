@@ -75,6 +75,6 @@ Clone the repo in your local machine and setup python and flutter environment. C
 2. Run `python main.py` in the root directory of the project.
 
 ## Contributors
-- [Harsh Jadon](https://github.com/kbansal77)
-- [Karnik Kanojia](https://github.com/aditpatel01)
-- [Eshaan Agarwal](https://github.com/Aryamaan23)
+- [Harsh Jadon](https://github.com/harshjadon9)
+- [Karnik Kanojia](https://github.com/karnikkanojia)
+- [Eshaan Agarwal](https://github.com/eshaanagarwal)
