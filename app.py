@@ -1,13 +1,15 @@
 from flask import Flask, render_template, request, jsonify
 from dotenv import load_dotenv
 import os
+
+from mongoengine import ValidationError
 from utils.score import get_scores
 from errors.invalid import InvalidAPIUsage
+from db.data import connectDB, createDoc
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 app = Flask(__name__)
-config = load_dotenv()
-
+load_dotenv()
 @app.errorhandler(404)
 def invalid(error):
     return render_template('404.html')
@@ -31,5 +33,18 @@ def score():
         'score': score
     }
 
+@app.route('/update', methods=['POST'])
+def update():
+    data = request.get_json()
+    message = data['message']
+    label = data['label']
+    try:
+        db = connectDB()
+        res = jsonify(str(createDoc(message, label)))
+        db.close()
+        return res
+    except ValidationError as e:
+        raise InvalidAPIUsage(str(e))
+
 if __name__ == "__main__":
-    app.run(port=os.environ.PORT)
+    app.run(port=os.environ.get('PORT'))
