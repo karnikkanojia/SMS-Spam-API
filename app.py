@@ -20,7 +20,7 @@ def method_not_allowed(error):
 
 @app.errorhandler(InvalidAPIUsage)
 def invalid_usage(error):
-    return jsonify(error.to_dict()), 200
+    return jsonify(error.to_dict()), 400
 
 @app.route('/api', methods=['POST'])
 def score():
