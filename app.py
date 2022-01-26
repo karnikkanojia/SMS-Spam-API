@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, redirect, render_template, request, jsonify
 from dotenv import load_dotenv
 import os
 
@@ -45,6 +45,10 @@ def update():
         return res
     except ValidationError as e:
         raise InvalidAPIUsage(str(e))
+
+@app.route('/docs')
+def docs():
+    return redirect('https://documenter.getpostman.com/view/18833270/UVeAtoRi')
 
 if __name__ == "__main__":
     app.run(port=os.environ.get('PORT'))

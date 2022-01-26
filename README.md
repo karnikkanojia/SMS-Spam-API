@@ -2,7 +2,7 @@
 ## Steps to Access
 To access our application you can either download the [android application]().
 
-- [Backend API Swagger Documentation](https://uidai-aadhaar.herokuapp.com/docs)
+- [Backend API Postman Documentation](https://documenter.getpostman.com/view/18833270/UVeAtoRi)
 - [Android App](https://github.com/ankithans/aadhaar-address-update/releases/download/v1.0.0/app-release.apk)
 - [Google Slides Presentation](https://docs.google.com/presentation/d/1jLPull2oPpjYmqjZ3OYSywi6pUvDwz_kdRglHXa2vA0/edit?usp=sharing)
 - [Video Demonstration](https://drive.google.com/file/d/1dfzlQbMaFiceaMA3m3UuaSNw_MhVyJiU/view?usp=sharing)
@@ -74,9 +74,9 @@ Clone the repo in your local machine and setup python and flutter environment. C
 2. Configure firebase for android by folllowing the [doumentation](https://firebase.flutter.dev/docs/installation/android/).
 3. Write `flutter run` in the terminal to start the application.
 
-### FastAPI Server
+### Flask Server
 1. Install all the required packages in python virtual enviroment `pip install requirements.txt`
-2. Run `python main.py` in the root directory of the project.
+2. Run `python app.py` in the root directory of the project.
 
 ## Contributors
 - [Harsh Jadon](https://github.com/harshjadon9)
