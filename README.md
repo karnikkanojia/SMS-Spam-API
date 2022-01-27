@@ -35,29 +35,17 @@ To design and develop a mobile app that can automatically scan through SMS texts
 
 
 ## Mockups
-<img src="./mockups/01.png">
-<td><img src="./mockups/12.png"></td>
-
 <table>
     <tr>
-        <td><img src="./mockups/02.png"></td>
-        <td><img src="./mockups/03.png"></td>
-        <td><img src="./mockups/06.png"></td>
+        <td><img src="https://github.com/eshaanagarwal/SMS-Spam-API/blob/documentation/Sms_page-0001.jpg"></td>
+<td><img src="https://github.com/eshaanagarwal/SMS-Spam-API/blob/documentation/Sms_page-0002.jpg"></td>
+        <td><img src="https://github.com/eshaanagarwal/SMS-Spam-API/blob/documentation/Sms_page-0003.jpg"></td>
     </tr>
     <tr>
-        <td><img src="./mockups/05.png"></td>
-        <td><img src="./mockups/07.png"></td>
-        <td><img src="./mockups/11.png"></td>
-    </tr>
-</table>
-<table>
-    <tr>
-        <td><img src="./mockups/08.png"></td>
-        <td><img src="./mockups/09.png"></td>
-    </tr>
-    <tr>
-        <td><img src="./mockups/10.png"></td>
-        <td><img src="./mockups/13.png"></td>
+        <td><img src="https://github.com/eshaanagarwal/SMS-Spam-API/blob/documentation/Sms_page-0004.jpg"></td>
+        <td><img src="https://github.com/eshaanagarwal/SMS-Spam-API/blob/documentation/Sms_page-0005.jpg"></td>
+        <td><img src="https://github.com/eshaanagarwal/SMS-Spam-API/blob/documentation/Sms_page-0006.jpg"></td>
+        <td><img src="https://github.com/eshaanagarwal/SMS-Spam-API/blob/documentation/Sms_page-0007.jpg"></td>
     </tr>
 </table>
 
