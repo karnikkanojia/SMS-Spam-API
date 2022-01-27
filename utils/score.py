@@ -1,7 +1,6 @@
 import tensorflow as tf
 import utils.preprocess
 import warnings
-import os
 warnings.filterwarnings('ignore')
 
 
@@ -13,5 +12,5 @@ def loadModel():
 def get_scores(msg):
     model = loadModel()
     msg = utils.preprocess.preprocess_text(msg)
-    scores = model(msg).numpy()
+    scores = model.predict(msg)
     return scores.tolist()
