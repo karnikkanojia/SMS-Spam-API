@@ -14,4 +14,4 @@ def loadModel():
 def get_scores(msg):
     model = loadModel()
     msg = utils.preprocess.preprocess_text([msg])
-    return model.predict(msg).tolist()
+    return model(msg).tolist()
