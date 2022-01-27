@@ -13,5 +13,6 @@ def loadModel():
 
 def get_scores(msg):
     model = loadModel()
-    msg = utils.preprocess.preprocess_text([msg])
-    return model(msg).tolist()
+    msg = utils.preprocess.preprocess_text(msg)
+    scores = model(msg).numpy()
+    return scores.tolist()
